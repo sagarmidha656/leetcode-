@@ -1,5 +1,8 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
+        if(s.length() != t.length()){
+            return false;
+        }
         HashMap<Character,Integer> set1 = new HashMap<>();
         HashMap<Character,Integer> set2 = new HashMap<>();
 
