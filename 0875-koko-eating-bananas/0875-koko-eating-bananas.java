@@ -2,7 +2,8 @@ class Solution {
     public long totalhours(int[] piles , int mid){
         long  hours = 0;
         for(int i =0 ; i<piles.length;i++){
-            hours += (long)Math.ceil((double)piles[i]/mid);
+            // hours += (long)Math.ceil((double)piles[i]/mid);
+            hours += (piles[i]+mid-1)/mid;
         }
         return hours;
     }
